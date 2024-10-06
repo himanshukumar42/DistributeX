@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.app {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.file-input {
+  padding: 10px;
+  border: 2px solid #28a745;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.file-input:focus {
+  outline: none;
+  border-color: #28a745;
+}
+
+.upload-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #0c8d2a;
+}
+
+.file-list {
+  margin-top: 20px;
+}
+
+.file-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.file-table th, .file-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px;
+}
+
+.file-table th {
+  background-color: #28a745;
+  color: white;
+}
+
+.file-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.file-table tr:hover {
+  background-color: #e8f0fe;
+}
+
+.download-button {
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
