@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "5692d30f-5892-490f-9c4c-e50ba7dba856",
+		"name": "DistributeX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "14394218"
+	},
+	"item": [
+		{
+			"name": "/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/himanshu/Downloads/image (3).png"
+						}
+					]
+				},
+				"url": "http://localhost:8080/api/v1/upload"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/files"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/download/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/download/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"download",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "4c56767c-f75b-4762-a1be-fe1fd3d2aa80"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
