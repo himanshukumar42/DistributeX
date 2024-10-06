@@ -8,7 +8,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/himanshukumar42/DistributeX/api"
 	"github.com/himanshukumar42/DistributeX/config"
+	_ "github.com/himanshukumar42/DistributeX/docs"
 	"github.com/himanshukumar42/DistributeX/utils"
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 
@@ -31,7 +34,9 @@ func main() {
 	router.GET("/", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"message": "Health Ok"})
 	})
-	
+
+    router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+
 	api.SetupRoutes(router)
 
 	utils.Logger.Info("Starting Server.....")
